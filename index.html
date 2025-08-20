@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 9 Jade School Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6fa;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #2d3436;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #b2bec3;
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 1em;
+        }
+        th {
+            background: #0984e3;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background: #f1f2f6;
+        }
+        tfoot td {
+            background: #dfe6e9;
+            color: #636e72;
+            font-weight: bold;
+            text-align: right;
+            border-top: 2px solid #0984e3;
+            font-size: 1.1em;
+        }
+        @media (max-width: 700px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                position: sticky;
+                top: 0;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #b2bec3;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 45%;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #636e72;
+            }
+            tr {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Class 9 Jade School Timetable</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Period 1</th>
+                <th>Period 2</th>
+                <th>Period 3</th>
+                <th>Period 4</th>
+                <th>Period 5</th>
+                <th>Period 6</th>
+                <th>Period 7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Manipuri (Nachom)</td>
+                <td>Physics</td>
+                <td>Mathematics B</td>
+                <td>Biology</td>
+                <td>Computer Science</td>
+                <td>English Literature</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>History</td>
+                <td>Chemistry</td>
+                <td>English Literature</td>
+                <td>Computer Science</td>
+                <td>Manipuri (Nachom)</td>
+                <td>Biology</td>
+                <td>Mathematics B</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Computer Science</td>
+                <td>Physics</td>
+                <td>Geography</td>
+                <td>Civics/Economics</td>
+                <td>Mathematics A</td>
+                <td>Manipuri (Nachom)</td>
+                <td>English Course</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Manipuri (Nongin)</td>
+                <td>Chemistry</td>
+                <td>English Course</td>
+                <td>Mathematics A</td>
+                <td>History</td>
+                <td>Mathematics B</td>
+                <td>Civics/Economics</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Mathematics A</td>
+                <td>English Grammar</td>
+                <td>Chemistry</td>
+                <td>Manipuri (Nongin)</td>
+                <td>Physics</td>
+                <td>Computer Science</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Computer Science</td>
+                <td>Geography</td>
+                <td>Civics/Economics</td>
+                <td>English Grammar</td>
+                <td>Mathematics A</td>
+                <td>Manipuri</td>
+                <td>Biology</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8">Created by Soubam Leishem</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
